@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>AiSensy Q&A Tool UI</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2em;
+        background: #f9f9f9;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 2em;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .section {
+        border: 1px solid #ccc;
+        padding: 1em;
+        margin-bottom: 2em;
+      }
+      textarea, input[type="text"] {
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1em;
+        margin-top: 0.5em;
+      }
+      input[type="submit"] {
+        padding: 0.5em 1em;
+        font-size: 1em;
+        margin-top: 1em;
+        cursor: not-allowed;
+      }
+      .note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 0.5em;
+      }
+      .answer {
+        background-color: #f0f0f0;
+        padding: 1em;
+        margin-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section" id="ingest-section">
+        <h1>Enter URLs to Ingest Content</h1>
+        <form>
+          <label for="urls">Enter one or more URLs (separated by commas or newlines):</label>
+          <textarea id="urls" name="urls" placeholder="https://example.com"></textarea>
+          <br>
+          <input type="submit" value="Ingest Content" disabled>
+          <p class="note">
+            *This form is for UI demonstration only. Backend functionality is not available on GitHub Pages.*
+          </p>
+        </form>
+      </div>
+
+      <div class="section" id="qa-section">
+        <h1>Ask a Question</h1>
+        <form>
+          <label for="question">Enter your question (based solely on the ingested content):</label>
+          <input type="text" id="question" name="question" placeholder="What is this website about?">
+          <br>
+          <input type="submit" value="Get Answer" disabled>
+          <p class="note">
+            *This form is for UI demonstration only. Backend functionality is not available on GitHub Pages.*
+          </p>
+        </form>
+        <div class="answer">
+          <h3>Answer:</h3>
+          <p>No answer available in demo mode.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
