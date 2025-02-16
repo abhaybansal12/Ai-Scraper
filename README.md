@@ -26,7 +26,7 @@ You can view the static user interface (frontend) at the following URL:
 
    ```bash
    git clone https://github.com/abhaybansal12/AiSensy.git
-   cd AiSensy
+   cd Ai-Scraper
 2. Create and Activate a Virtual Environment:
 
 python3 -m venv venv
@@ -56,7 +56,7 @@ python app.py
 
 Project Structure:
 
-AiSensy/
+Ai-Scraper/
 ├── app.py               # Main Flask application with content ingestion and Q&A functionality
 
 ├── index.html           # Static HTML file for the UI (hosted on Netlify)
